@@ -6,15 +6,17 @@ import TotalFund from "/src/components/pages/home/TotalFund.vue";
 import SearchCard from "/src/components/pages/home/SearchCard.vue";
 import MenuCard from "/src/components/pages/home/MenuCard.vue";
 import RecentView from "/src/components/pages/home/RecentView.vue";
+import Marquee from "/src/components/common/marquee/Marquee.vue";
 
 import bannerList from "/src/assets/bannerList.json";
 import menu from "/src/assets/menuCard.json";
+import marqueeList from "/src/assets/marqueeList.json";
 </script>
 
 <template>
-  <Header class="fixed z-10" />
-  <Navbar class="fixed z-10 top-14 w-full" />
-  <Banner class="pt-28" :bannerList="bannerList" />
+  <div class="h-14"><Header class="fixed z-10" /></div>
+  <div class="h-14"><Navbar class="fixed z-10 top-14 w-full" /></div>
+  <Banner :bannerList="bannerList" />
   <main class="w-lg mx-auto">
     <div class="flex my-4 gap-x-4">
       <TotalFund />
@@ -29,5 +31,6 @@ import menu from "/src/assets/menuCard.json";
       />
     </div>
     <RecentView class="mt-16" />
+    <Marquee :marqueeList="marqueeList" class="my-8" />
   </main>
 </template>
