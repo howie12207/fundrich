@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 40 40" version="1.1">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Icon/Product/40/Chart</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icon/Product/40/Chart" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Chart,-Circle">
+            <polygon id="Path" points="0 0 40 0 40 40 0 40"/>
+            <g id="Group" stroke-linecap="round" stroke-linejoin="round" transform="translate(5.000000, 2.857143)" stroke-width="3">
+                <path d="M25.6066667,29.4528205 L15.4883333,19.3344872 C15.175,19.0211538 15,18.5978205 15,18.1561538 L15,3.84615385" id="Path" stroke="#1C5E75"/>
+                <path d="M30,18.8461538 L30,18.8461538 C30,27.1311538 23.285,33.8461538 15,33.8461538 L15,33.8461538 C6.715,33.8461538 0,27.1311538 0,18.8461538 L0,18.8461538 C0,10.5611538 6.715,3.84615385 15,3.84615385 L15,3.84615385 C23.285,3.84615385 30,10.5611538 30,18.8461538 Z" id="Path" stroke="#1C5E75"/>
+                <path d="M15,17.955911 L30.3846154,9.17026322 L30.2176474,8.89832107 C26.9696754,3.60832085 21.2075297,0.384615385 15,0.384615385 L15,17.955911 Z" id="Combined-Shape" stroke="#CC9900" fill="#FCEBB6"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 40 40" version="1.1">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Icon/Product/40/Gift</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icon/Product/40/Gift" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Gift,-Box.1">
+            <polygon id="Path" points="0 0 40 0 40 40 0 40"/>
+            <g id="Group" stroke-linecap="round" stroke-linejoin="round" transform="translate(4.918699, 2.692308)">
+                <path d="M28.4146341,10.6410256 L1.74796748,10.6410256 C0.82796748,10.6410256 0.081300813,11.3876923 0.081300813,12.3076923 L0.081300813,15.6410256 C0.081300813,16.5610256 0.82796748,17.3076923 1.74796748,17.3076923 L28.4146341,17.3076923 C29.3346341,17.3076923 30.0813008,16.5610256 30.0813008,15.6410256 L30.0813008,12.3076923 C30.0813008,11.3876923 29.3346341,10.6410256 28.4146341,10.6410256 Z" id="Path" stroke="#1C5E75" stroke-width="3"/>
+                <line x1="15.0813008" y1="32.3076923" x2="15.0813008" y2="10.6410256" id="Path" stroke="#1C5E75" stroke-width="3"/>
+                <line x1="15.0813008" y1="32.3076923" x2="15.0813008" y2="18.4615385" id="Path" stroke="#CC9900" stroke-width="3"/>
+                <g id="Group-13" transform="translate(6.619762, 0.384615)">
+                    <path d="M7.62327361,1.78346014 C5.69912288,1.41083726e-14 3.86962029,-0.445865034 2.13476583,0.445865034 C-0.467515861,1.78346014 0.21892576,9.1083857 7.98835788,9.1083857 C15.75779,9.1083857 16.8117692,2.72456 14.9469578,0.962656178 C13.7037502,-0.211946368 11.2625222,0.0616549513 7.62327361,1.78346014 Z" id="Path-4" fill="#FCEBB6"/>
+                    <path d="M15.4144737,6.9695614 C13.3341228,9.13482456 10.0592105,9.64815789 8.47289474,9.64815789" id="Path" stroke="#CC9900" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.47289474,9.64815789 C8.47289474,9.64815789 7.5195614,3.63482456 9.86429825,1.19552632" id="Path" stroke="#CC9900" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15.4144737,6.9695614 C16.9467544,5.37552632 16.9467544,2.7895614 15.4144737,1.19552632 C13.882193,-0.398508772 11.3985088,-0.398508772 9.86622807,1.19552632" id="Path" stroke="#CC9900" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1.14921053,6.9695614 C3.2295614,9.13482456 6.50447368,9.64815789 8.09078947,9.64815789" id="Path" stroke="#CC9900" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.09078947,9.64815789 C8.09078947,9.64815789 9.04412281,3.63482456 6.69938596,1.19552632" id="Path" stroke="#CC9900" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1.14921053,6.9695614 C-0.383070175,5.37552632 -0.383070175,2.7895614 1.14921053,1.19552632 C2.68149123,-0.398508772 5.16517544,-0.398508772 6.69745614,1.19552632" id="Path" stroke="#CC9900" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <path d="M26.7479675,17.3076923 L26.7479675,30.6410256 C26.7479675,31.5610256 26.0013008,32.3076923 25.0813008,32.3076923 L5.08130081,32.3076923 C4.16130081,32.3076923 3.41463415,31.5610256 3.41463415,30.6410256 L3.41463415,17.3076923" id="Path" stroke="#1C5E75" stroke-width="3"/>
+            </g>
+        </g>
+    </g>
+</svg>

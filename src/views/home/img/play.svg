@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 40 40" version="1.1">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Icon/Product/40/Play</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icon/Product/40/Play" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Video,-Movies.17">
+            <polygon id="Path" stroke="#CC9900" stroke-width="3" fill="#FCEBB6" stroke-linecap="round" stroke-linejoin="round" points="17.1566667 20 24.3716667 15.8333333 17.1566667 11.6666667"/>
+            <path d="M33.1483333,5.64833333 L6.85166667,5.64833333 C5.82833333,5.64833333 5,6.47666667 5,7.5 L5,24.1666667 C5,25.19 5.82833333,26.0183333 6.85166667,26.0183333 L33.1483333,26.0183333 C34.1716667,26.0183333 35,25.19 35,24.1666667 L35,7.5 C35,6.47666667 34.1716667,5.64833333 33.1483333,5.64833333 Z" id="Path" stroke="#1C5E75" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="35" y1="33.3333333" x2="15" y2="33.3333333" id="Path" stroke="#1C5E75" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="5" y1="33.3333333" x2="10" y2="33.3333333" id="Path" stroke="#1C5E75" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14.2677667,31.5655 C15.2440767,32.54181 15.2440767,34.1247167 14.2677667,35.1010333 C13.2914567,36.0773433 11.70855,36.0773433 10.7322333,35.1010333 C9.75592333,34.1247233 9.75592333,32.5418167 10.7322333,31.5655 C11.7085433,30.58919 13.29145,30.58919 14.2677667,31.5655" id="Path" stroke="#CC9900" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect id="Rectangle" fill="#D8D8D8" opacity="0" x="0" y="0" width="40" height="40"/>
+        </g>
+    </g>
+</svg>

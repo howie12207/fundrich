@@ -23,6 +23,7 @@ module.exports = {
       },
       width: {
         0.25: "1px",
+        lg: "1280px",
         xl: "1440px",
       },
       padding: {
