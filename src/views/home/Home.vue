@@ -12,9 +12,9 @@ import menu from "/src/assets/menuCard.json";
 </script>
 
 <template>
-  <Header />
-  <Navbar />
-  <Banner :bannerList="bannerList" />
+  <Header class="fixed z-10" />
+  <Navbar class="fixed z-10 top-14 w-full" />
+  <Banner class="pt-28" :bannerList="bannerList" />
   <main class="w-lg mx-auto">
     <div class="flex my-4 gap-x-4">
       <TotalFund />
