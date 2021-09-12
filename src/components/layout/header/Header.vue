@@ -44,7 +44,7 @@ const imgSrc = (src) => {
         <div
           :class="[
             'flex items-center px-4 py-3.5 text-lg cursor-pointer',
-            { 'bg-brown-700': item.label === '登入' },
+            { 'bg-brown-600': item.label === '登入' },
           ]"
           v-for="item of menuFilter"
           :key="item.label"

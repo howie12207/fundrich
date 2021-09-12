@@ -2,6 +2,8 @@
 import Header from "../../components/layout/header/Header.vue";
 import Navbar from "../../components/layout/navbar/Navbar.vue";
 import Banner from "../../components/common/banner/Banner.vue";
+import TotalFund from "../../components/pages/home/TotalFund.vue";
+import SearchCard from "../../components/pages/home/SearchCard.vue";
 
 const imgSrc = (src) => {
   const path = `./img/${src}`;
@@ -20,4 +22,8 @@ const bannerList = [
   <Header />
   <Navbar />
   <Banner :bannerList="bannerList" />
+  <div class="flex w-xl mx-auto my-4 gap-x-4">
+    <TotalFund />
+    <SearchCard />
+  </div>
 </template>
