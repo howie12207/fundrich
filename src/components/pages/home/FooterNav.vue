@@ -1,0 +1,43 @@
+<script setup>
+import { computed } from "vue";
+import navList from "/src/assets/navList.json";
+
+const navListFilter = computed(() =>
+  navList.map((item) => {
+    const sub = [];
+    item.sub.forEach((element) => {
+      sub.push(...element.sub);
+    });
+    return { ...item, sub };
+  }),
+);
+
+const imgSrc = (src) => {
+  const path = `./img/${src}`;
+  const modules = import.meta.globEager("./img/*");
+  return modules[path].default;
+};
+</script>
+
+<template>
+  <div class="bg-gray-300 py-4">
+    <div class="w-lg mx-auto flex gap-x-4">
+      <div
+        class="w-1/12 flex-grow"
+        v-for="nav of navListFilter"
+        :key="nav.label"
+      >
+        <h4 class="py-2 mb-3 border-b-2 border-gray-400">{{ nav.label }}</h4>
+        <ul v-if="nav.sub">
+          <li
+            class="text-sm hover:underline"
+            v-for="sub of nav.sub"
+            :key="sub.label"
+          >
+            <router-link class="block mb-3" to="">{{ sub.label }}</router-link>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>
