@@ -1,22 +1,10 @@
 <script setup>
 import { ref } from "vue";
+import keywords from "/src/assets/searchCard.json";
 
 // Todo: search功能、點擊keyword功能、keyword滾動功能
 
 const keywordBar = ref(null);
-
-const keywords = [
-  { label: "好享退", path: "" },
-  { label: "安聯收益成長", path: "" },
-  { label: "復華台灣好收益", path: "" },
-  { label: "聯博全高收", path: "" },
-  { label: "安聯台灣大壩", path: "" },
-  { label: "貝萊德世界科技", path: "" },
-  { label: "摩根士丹利美國增長", path: "" },
-  { label: "中信越南", path: "" },
-  { label: "聯博多元資產收益組合", path: "" },
-  { label: "野村優質", path: "" },
-];
 
 const imgSrc = (src) => {
   const path = `./img/${src}`;

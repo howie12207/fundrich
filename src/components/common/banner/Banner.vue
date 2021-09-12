@@ -66,7 +66,7 @@ const imgSrc = (src) => {
     "
   >
     <swiper-slide v-for="banner of bannerList" :key="banner.label">
-      <img :src="banner.src" :alt="banner.label" class="w-full"
+      <img :src="imgSrc(banner.src)" :alt="banner.label" class="w-full"
     /></swiper-slide>
   </swiper>
 </template>
