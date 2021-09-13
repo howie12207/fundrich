@@ -28,7 +28,7 @@ SwiperCore.use([Autoplay]);
       v-for="marquee of marqueeList"
       :key="marquee.label"
     >
-      <span class="text-brown-500 pr-4 border-r-2 border-brown-500">{{
+      <span class="text-brown-500 pr-4 border-r border-brown-500">{{
         marquee.type
       }}</span>
       <span class="mx-4">{{ marquee.time }}</span>

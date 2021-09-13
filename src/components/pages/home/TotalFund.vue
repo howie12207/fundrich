@@ -15,7 +15,7 @@ const imgSrc = (src) => {
   <section
     class="w-1/5 bg-brown-500 text-center text-white rounded-md overflow-hidden"
   >
-    <p class="py-2 border-b-2">銷售基金商品數</p>
+    <p class="py-2 border-b">銷售基金商品數</p>
     <div class="relative flex items-center justify-center py-3">
       <span class="text-4xl">3,888</span>
       <router-link

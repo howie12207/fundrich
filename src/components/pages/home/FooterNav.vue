@@ -27,14 +27,12 @@ const imgSrc = (src) => {
         v-for="nav of navListFilter"
         :key="nav.label"
       >
-        <h4 class="py-2 mb-3 border-b-2 border-gray-400">{{ nav.label }}</h4>
+        <h4 class="py-2 mb-3 border-b border-gray-400">{{ nav.label }}</h4>
         <ul v-if="nav.sub">
-          <li
-            class="text-sm hover:underline"
-            v-for="sub of nav.sub"
-            :key="sub.label"
-          >
-            <router-link class="block mb-3" to="">{{ sub.label }}</router-link>
+          <li class="text-sm" v-for="sub of nav.sub" :key="sub.label">
+            <router-link class="inline-block mb-3 hover:underline" to="">{{
+              sub.label
+            }}</router-link>
           </li>
         </ul>
       </div>

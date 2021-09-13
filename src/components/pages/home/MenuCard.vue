@@ -18,7 +18,7 @@ const imgSrc = (src) => {
 
 <template>
   <div class="p-3 bg-white">
-    <h3 class="relative flex items-center text-lg font-bold pb-4 border-b-2">
+    <h3 class="relative flex items-center text-lg font-bold pb-4 border-b">
       <img class="mr-4" :src="imgSrc(menu.icon)" :alt="menu.label" />
       {{ menu.label }}
       <router-link
