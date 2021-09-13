@@ -9,6 +9,7 @@ import RecentView from "/src/components/pages/home/RecentView.vue";
 import Marquee from "/src/components/common/marquee/Marquee.vue";
 import FooterNav from "/src/components/pages/home/FooterNav.vue";
 import FooterContact from "/src/components/pages/home/FooterContact.vue";
+import FooterStatement from "/src/components/pages/home/FooterStatement.vue";
 
 import bannerList from "/src/assets/bannerList.json";
 import menu from "/src/assets/menuCard.json";
@@ -38,5 +39,6 @@ import marqueeList from "/src/assets/marqueeList.json";
   <footer>
     <FooterNav />
     <FooterContact />
+    <FooterStatement />
   </footer>
 </template>

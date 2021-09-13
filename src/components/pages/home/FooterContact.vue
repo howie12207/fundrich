@@ -45,12 +45,16 @@ const imgSrc = (src) => {
         <div class="mb-4"><img :src="imgSrc('logo.svg')" alt="logo" /></div>
         <div class="flex items-center mb-4">
           <router-link class="mr-4" to="/">
-            <img :src="imgSrc('facebook.svg')" alt="facebook"
+            <img class="icon" :src="imgSrc('facebook.svg')" alt="facebook"
           /></router-link>
           <router-link class="mr-4" to="/">
-            <img :src="imgSrc('youtube.svg')" alt="youtube"
+            <img class="icon" :src="imgSrc('youtube.svg')" alt="youtube"
           /></router-link>
-          <img class="cursor-pointer" :src="imgSrc('email.svg')" alt="email" />
+          <img
+            class="icon cursor-pointer"
+            :src="imgSrc('email.svg')"
+            alt="email"
+          />
         </div>
         <p class="mb-4">金管會核准字號：106年金管證總字第0051號</p>
         <p>© 2016基富通證券股份有限公司版權所有</p>
@@ -85,3 +89,10 @@ const imgSrc = (src) => {
     </div>
   </section>
 </template>
+
+<style scoped>
+.icon:hover {
+  filter: invert(63%) sepia(19%) saturate(944%) hue-rotate(1deg) brightness(98%)
+    contrast(88%);
+}
+</style>
