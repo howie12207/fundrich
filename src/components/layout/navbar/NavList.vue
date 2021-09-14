@@ -25,7 +25,7 @@ const imgSrc = (src) => {
         v-for="item of menu"
         :key="item.label"
       >
-        <div class="flex cursor-pointer">
+        <div class="flex">
           <span class="peer text-lg group-hover:text-brown-500">{{
             item.label
           }}</span>

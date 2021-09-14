@@ -3,7 +3,6 @@ import { defineProps } from "vue";
 
 import { Swiper, SwiperSlide } from "swiper/vue";
 import SwiperCore, { Autoplay } from "swiper";
-import "swiper/css/bundle";
 import "swiper/css";
 
 defineProps({
