@@ -32,6 +32,10 @@ module.exports = {
         3.5: "14px",
       },
     },
+    screens: {
+      lg: "1280px",
+      xl: "1440px",
+    },
   },
   variants: {
     extend: {},

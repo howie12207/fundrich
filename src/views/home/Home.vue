@@ -20,7 +20,7 @@ import marqueeList from "/src/assets/marqueeList.json";
   <div class="h-14"><Header class="fixed z-10" /></div>
   <div class="h-14"><Navbar class="fixed z-10 top-14 w-full" /></div>
   <Banner :bannerList="bannerList" />
-  <main class="w-lg mx-auto">
+  <main class="w-full lg:w-lg mx-auto">
     <div class="flex my-4 gap-x-4">
       <TotalFund />
       <SearchCard />

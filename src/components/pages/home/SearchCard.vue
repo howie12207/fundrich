@@ -2,9 +2,25 @@
 import { ref } from "vue";
 import keywords from "/src/assets/searchCard.json";
 
-// Todo: search功能、點擊keyword功能、keyword滾動功能
+// Todo: search功能、點擊keyword功能
 
 const keywordBar = ref(null);
+const prevBtn = ref(false);
+const nextBtn = ref(true);
+let scrollW = 0;
+const scrollTo = (direction) => {
+  if ((!prevBtn.value && direction < 0) || (!nextBtn.value && direction > 0))
+    return;
+  const nowLocation = keywordBar.value.scrollLeft;
+  const scrollWidth = keywordBar.value.scrollWidth;
+  const clientWidth = keywordBar.value.clientWidth;
+  const STEP = 30 * direction;
+  if (scrollW === 0) scrollW = scrollWidth - clientWidth;
+  const moveTo = nowLocation + STEP;
+  keywordBar.value.scrollLeft = moveTo;
+  prevBtn.value = moveTo <= 0 ? false : true;
+  nextBtn.value = moveTo >= scrollW ? false : true;
+};
 
 const imgSrc = (src) => {
   const path = `./img/${src}`;
@@ -29,9 +45,13 @@ const imgSrc = (src) => {
     <div class="text-white mt-4 flex items-center">
       <span class="flex-shrink-0">熱門關鍵字</span>
       <img
-        class="rotate-180 cursor-pointer"
+        :class="[
+          'rotate-180 cursor-pointer',
+          !prevBtn && 'opacity-30 cursor-not-allowed',
+        ]"
         :src="imgSrc('chevron_right.svg')"
         alt="chevron_left"
+        @click="scrollTo(-1)"
       />
       <div ref="keywordBar" class="overflow-x-hidden flex gap-x-2">
         <span
@@ -52,10 +72,10 @@ const imgSrc = (src) => {
         >
       </div>
       <img
-        class="cursor-pointer"
+        :class="['cursor-pointer', !nextBtn && 'opacity-30 cursor-not-allowed']"
         :src="imgSrc('chevron_right.svg')"
         alt="chevron_left"
-        @click="scrollTo"
+        @click="scrollTo(1)"
       />
     </div>
   </section>

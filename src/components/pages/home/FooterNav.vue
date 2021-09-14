@@ -21,7 +21,7 @@ const imgSrc = (src) => {
 
 <template>
   <div class="bg-gray-300 py-4">
-    <div class="w-lg mx-auto flex gap-x-4">
+    <div class="w-full lg:w-lg mx-auto flex gap-x-4">
       <div
         class="w-1/12 flex-grow"
         v-for="nav of navListFilter"

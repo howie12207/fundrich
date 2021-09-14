@@ -40,7 +40,7 @@ const imgSrc = (src) => {
 
 <template>
   <section class="bg-darkBlue-800 text-white text-sm px-5 py-7">
-    <div class="w-lg mx-auto flex">
+    <div class="w-full lg:w-lg mx-auto flex">
       <div class="w-1/3 px-3">
         <div class="mb-4"><img :src="imgSrc('logo.svg')" alt="logo" /></div>
         <div class="flex items-center mb-4">
