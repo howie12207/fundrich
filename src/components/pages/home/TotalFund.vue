@@ -13,7 +13,15 @@ const imgSrc = (src) => {
 
 <template>
   <section
-    class="w-1/5 bg-brown-500 text-center text-white rounded-md overflow-hidden"
+    class="
+      w-full
+      bg-brown-500
+      text-center text-white
+      rounded-md
+      overflow-hidden
+      flex-shrink-0
+      md:w-60
+    "
   >
     <p class="py-2 border-b">銷售基金商品數</p>
     <div class="relative flex items-center justify-center py-3">

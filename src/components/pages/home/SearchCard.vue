@@ -30,7 +30,17 @@ const imgSrc = (src) => {
 </script>
 
 <template>
-  <section class="w-4/5 h-34 p-6 bg-darkGreen-700 rounded-md">
+  <section
+    class="
+      hidden
+      p-6
+      bg-darkGreen-700
+      rounded-md
+      flex-shrink flex-grow
+      w-1/2
+      md:block
+    "
+  >
     <div class="relative flex items-center rounded-md overflow-hidden">
       <img class="absolute left-2" :src="imgSrc('search.svg')" alt="search" />
       <input
