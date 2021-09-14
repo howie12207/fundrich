@@ -7,10 +7,10 @@ const imgSrc = (src) => {
 </script>
 
 <template>
-  <div class="relative flex items-center">
+  <div class="relative flex items-center w-full lg:w-72">
     <img class="absolute left-4" :src="imgSrc('search.svg')" alt="搜尋" />
     <input
-      class="w-72 pl-12 pr-4 py-4 outline-none border-l border-"
+      class="w-full pl-12 pr-4 py-4 outline-none border-l"
       type="text"
       placeholder="請輸入您想尋找的基金商品名稱"
     />

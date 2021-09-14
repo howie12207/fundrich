@@ -52,8 +52,8 @@ const imgSrc = (src) => {
             'flex items-center px-2 h-14 text-lg cursor-pointer',
             { 'bg-brown-600': item.label === '登入' },
             { hidden: item.label === '關於我們' || item.label === '登入' },
-            'md:flex md:px-4',
-            { 'md:hidden': item.label === '菜單' },
+            'lg:flex lg:px-4',
+            { 'lg:hidden': item.label === '菜單' },
           ]"
           v-for="item of menuFilter"
           :key="item.label"

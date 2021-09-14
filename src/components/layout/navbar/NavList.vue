@@ -9,7 +9,7 @@ const imgSrc = (src) => {
 </script>
 
 <template>
-  <nav class="mr-4 h-full">
+  <nav class="hidden mr-4 h-full lg:block">
     <ul class="flex">
       <li
         class="
