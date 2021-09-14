@@ -17,7 +17,7 @@ const imgSrc = (src) => {
 </script>
 
 <template>
-  <div class="p-3 bg-white">
+  <div class="w-full flex-grow rounded-md p-3 bg-white md:w-1/3 lg:w-1/4">
     <h3 class="relative flex items-center text-lg font-bold pb-4 border-b">
       <img class="mr-4" :src="imgSrc(menu.icon)" :alt="menu.label" />
       {{ menu.label }}
@@ -41,7 +41,7 @@ const imgSrc = (src) => {
     <ul class="flex flex-wrap gap-2 mt-2" v-if="menu.sub">
       <li
         :class="[
-          'menu relative w-1/3 flex-grow p-2 cursor-pointer hover:underline hover:text-brown-400',
+          'menu relative w-1/2 lg:w-1/3 flex-grow p-2 cursor-pointer hover:underline hover:text-brown-400',
           { 'font-bold': subMenu.remark },
           { 'text-red-500': subMenu.remark === 'Hot' },
         ]"

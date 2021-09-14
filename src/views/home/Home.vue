@@ -18,7 +18,7 @@ import marqueeList from "/src/assets/marqueeList.json";
 
 <template>
   <div class="h-14"><Header class="fixed z-10" /></div>
-  <div class="h-14"><Navbar class="fixed z-10 top-14 w-full" /></div>
+  <div class="h-14"><Navbar class="fixed z-10 top-14" /></div>
   <Banner :bannerList="bannerList" />
   <main class="w-full px-4 mx-auto lg:w-lg">
     <div class="flex my-4 gap-x-4">
@@ -26,12 +26,7 @@ import marqueeList from "/src/assets/marqueeList.json";
       <SearchCard />
     </div>
     <div class="flex flex-wrap gap-8">
-      <MenuCard
-        class="w-1/4 flex-grow rounded-md"
-        v-for="item of menu"
-        :key="item.label"
-        :menu="item"
-      />
+      <MenuCard v-for="item of menu" :key="item.label" :menu="item" />
     </div>
     <RecentView class="mt-16" />
     <Marquee :marqueeList="marqueeList" class="my-8" />
