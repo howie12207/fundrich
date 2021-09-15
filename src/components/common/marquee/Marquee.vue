@@ -10,25 +10,28 @@ defineProps({
   },
 });
 
+// h-24 md:h-12
+
 SwiperCore.use([Autoplay]);
 </script>
 
 <template>
   <swiper
-    class="mySwiper h-12 px-4 bg-white rounded-md"
+    class="h-20 md:h-12 px-4 bg-white rounded-md"
     loop
-    autoplay
     direction="vertical"
   >
     <swiper-slide
-      class="py-3"
+      class="truncate py-3"
       v-for="marquee of marqueeList"
       :key="marquee.label"
     >
-      <span class="text-brown-500 pr-4 border-r border-brown-500">{{
-        marquee.type
-      }}</span>
-      <span class="mx-4">{{ marquee.time }}</span>
+      <div class="md:inline-block">
+        <span class="text-brown-500 pr-4 border-r border-brown-500">{{
+          marquee.type
+        }}</span>
+        <span class="mx-4">{{ marquee.time }}</span>
+      </div>
       <router-link class="hover:underline hover:text-brown-500" to="/">{{
         marquee.label
       }}</router-link></swiper-slide
