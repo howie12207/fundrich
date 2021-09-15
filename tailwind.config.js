@@ -26,6 +26,7 @@ module.exports = {
         0.25: "1px",
         lg: "1280px",
         xl: "1440px",
+        "1/10": "10%",
       },
       padding: {
         1.5: "6px",
