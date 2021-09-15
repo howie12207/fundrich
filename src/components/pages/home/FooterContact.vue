@@ -40,8 +40,8 @@ const imgSrc = (src) => {
 
 <template>
   <section class="bg-darkBlue-800 text-white text-sm px-5 py-7">
-    <div class="w-full lg:w-lg mx-auto flex">
-      <div class="w-1/3 px-3">
+    <div class="w-full mx-auto grid md:grid-cols-2 lg:w-lg lg:grid-cols-3">
+      <div class="px-3">
         <div class="mb-4"><img :src="imgSrc('logo.svg')" alt="logo" /></div>
         <div class="flex items-center mb-4">
           <router-link class="mr-4" to="/">
@@ -61,11 +61,16 @@ const imgSrc = (src) => {
       </div>
       <ul
         class="
-          w-1/3
-          px-12
+          px-4
+          pt-8
+          pb-4
+          mt-4
           flex flex-col
+          gap-y-4
           justify-around
-          border-l border-r border-gray-600
+          border-t border-gray-600
+          md:px-12 md:mt-0 md:gap-y-0 md:py-0 md:border-t-0 md:border-l
+          lg:border-r
         "
       >
         <li
@@ -77,10 +82,32 @@ const imgSrc = (src) => {
           <a :href="list.href" target="_blank">{{ list.content }}</a>
         </li>
       </ul>
-      <div class="w-1/3 px-3 grid grid-cols-2 content-center gap-3">
+      <div
+        class="
+          px-3
+          mt-4
+          pt-4
+          border-t border-gray-600
+          col-span-full
+          lg:mt-0
+          lg:pt-0
+          lg:border-t-0
+          lg:col-auto
+          lg:grid
+          lg:grid-cols-2
+          lg:content-center
+          lg:gap-3
+        "
+      >
         <router-link
           v-for="link of linkList"
-          class="hover:underline hover:text-brown-500 justify-self-start"
+          class="
+            inline-block
+            pr-4
+            pb-2
+            justify-self-start
+            hover:underline hover:text-brown-500
+          "
           :key="link.label"
           :to="link.path"
           >{{ link.label }}</router-link

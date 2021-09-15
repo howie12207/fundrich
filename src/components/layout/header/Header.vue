@@ -26,7 +26,7 @@ const menu = [
     login: true,
   },
   {
-    label: "菜單",
+    label: "選單",
     icon: "menu.svg",
   },
 ];

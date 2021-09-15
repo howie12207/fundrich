@@ -1,6 +1,4 @@
 <script setup>
-import { defineProps } from "vue";
-
 import { Swiper, SwiperSlide } from "swiper/vue";
 import SwiperCore, { Autoplay, Navigation, Pagination } from "swiper";
 import "swiper/css";

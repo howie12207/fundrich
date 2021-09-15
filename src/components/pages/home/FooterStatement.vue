@@ -22,7 +22,7 @@ const statement = [
 </script>
 
 <template>
-  <section class="bg-darkBlue-900 text-gray-400 text-sm py-4">
+  <section class="bg-darkBlue-900 text-gray-400 text-sm p-4">
     <div class="w-full lg:w-lg mx-auto">
       <h6 class="py-2">重要聲明</h6>
       <ul>

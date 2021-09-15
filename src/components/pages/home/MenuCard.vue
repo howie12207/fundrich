@@ -1,7 +1,5 @@
 <script setup>
 // Todo: path位置
-import { defineProps } from "vue";
-
 defineProps({
   menu: {
     type: Object,
