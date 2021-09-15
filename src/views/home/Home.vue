@@ -1,19 +1,19 @@
 <script setup>
-import Header from "/src/components/layout/header/Header.vue";
-import Navbar from "/src/components/layout/navbar/Navbar.vue";
-import Banner from "/src/components/common/banner/Banner.vue";
-import TotalFund from "/src/components/pages/home/TotalFund.vue";
-import SearchCard from "/src/components/pages/home/SearchCard.vue";
-import MenuCard from "/src/components/pages/home/MenuCard.vue";
-import RecentView from "/src/components/pages/home/RecentView.vue";
-import Marquee from "/src/components/common/marquee/Marquee.vue";
-import FooterNav from "/src/components/pages/home/FooterNav.vue";
-import FooterContact from "/src/components/pages/home/FooterContact.vue";
-import FooterStatement from "/src/components/pages/home/FooterStatement.vue";
+import Header from "@/components/layout/header/Header.vue";
+import Navbar from "@/components/layout/navbar/Navbar.vue";
+import Banner from "@/components/common/banner/Banner.vue";
+import TotalFund from "@/components/pages/home/TotalFund.vue";
+import SearchCard from "@/components/pages/home/SearchCard.vue";
+import MenuCard from "@/components/pages/home/MenuCard.vue";
+import RecentView from "@/components/pages/home/RecentView.vue";
+import Marquee from "@/components/common/marquee/Marquee.vue";
+import FooterNav from "@/components/pages/home/FooterNav.vue";
+import FooterContact from "@/components/pages/home/FooterContact.vue";
+import FooterStatement from "@/components/pages/home/FooterStatement.vue";
 
-import bannerList from "/src/assets/bannerList.json";
-import menu from "/src/assets/menuCard.json";
-import marqueeList from "/src/assets/marqueeList.json";
+import bannerList from "@/assets/bannerList.json";
+import menu from "@/assets/menuCard.json";
+import marqueeList from "@/assets/marqueeList.json";
 </script>
 
 <template>

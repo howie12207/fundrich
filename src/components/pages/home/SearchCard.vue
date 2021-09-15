@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from "vue";
-import keywords from "/src/assets/searchCard.json";
+import keywords from "@/assets/searchCard.json";
 
 // Todo: search功能、點擊keyword功能
 

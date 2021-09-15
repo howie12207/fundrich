@@ -1,8 +1,8 @@
 <script setup>
 // Todo: 瀏覽資料暫時寫死
-import recentViewList from "/src/assets/recentView.json";
+import recentViewList from "@/assets/recentView.json";
 
-import { decimalRoundHandler } from "/src/utils/format.js";
+import { decimalRoundHandler } from "@/utils/format.js";
 
 const tableItem = [
   { label: "名稱", key: "name" },

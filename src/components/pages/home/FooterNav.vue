@@ -1,6 +1,6 @@
 <script setup>
 import { computed } from "vue";
-import navList from "/src/assets/navList.json";
+import navList from "@/assets/navList.json";
 
 const navListFilter = computed(() =>
   navList.map((item) => {
