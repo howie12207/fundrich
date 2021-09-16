@@ -22,7 +22,7 @@ SwiperCore.use([Autoplay]);
     direction="vertical"
   >
     <swiper-slide
-      class="truncate py-3"
+      class="truncate py-3 px-2"
       v-for="marquee of marqueeList"
       :key="marquee.label"
     >

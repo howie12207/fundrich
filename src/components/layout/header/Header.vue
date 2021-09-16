@@ -1,7 +1,9 @@
 <script setup>
 import { computed, ref } from "vue";
+import { useRouter } from "vue-router";
 
 const loginStatus = ref(false);
+
 const menu = [
   {
     label: "關於我們",
@@ -18,6 +20,7 @@ const menu = [
   },
   {
     label: "登入",
+    path: "/login",
     icon: "login.svg",
   },
   {
@@ -30,8 +33,12 @@ const menu = [
     icon: "menu.svg",
   },
 ];
-
 const menuFilter = computed(() => menu.filter((item) => !item.login));
+
+const router = new useRouter();
+const menuClick = (item) => {
+  if (item.label === "登入") router.push(item.path);
+};
 
 const imgSrc = (src) => {
   const path = `./img/${src}`;
@@ -57,6 +64,7 @@ const imgSrc = (src) => {
           ]"
           v-for="item of menuFilter"
           :key="item.label"
+          @click="menuClick(item)"
         >
           <img class="mr-2" :src="imgSrc(item.icon)" :alt="item.label" />
           <span class="hidden md:inline-block">{{ item.label }}</span>
