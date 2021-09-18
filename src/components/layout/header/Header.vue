@@ -38,6 +38,7 @@ const menuFilter = computed(() => menu.filter((item) => !item.login));
 const router = new useRouter();
 const menuClick = (item) => {
   if (item.label === "登入") router.push(item.path);
+  if (item.label === "關於我們") router.push(item.path);
 };
 
 const imgSrc = (src) => {
