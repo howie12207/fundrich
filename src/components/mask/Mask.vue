@@ -76,8 +76,8 @@ const style = computed(() => {
 
 .popup_wrapper {
   width: var(--popupWidth);
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 100%;
+  max-height: 100%;
   min-height: 50px;
   position: absolute;
   top: 50%;

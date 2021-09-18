@@ -85,7 +85,7 @@ const imgSrc = (src) => {
         </div>
       </div>
     </div>
-    <Mask v-if="popupOpen === 'favorite'" @close="popup" width="400px">
+    <Mask v-if="popupOpen === 'favorite'" @close="popup" width="320px">
       <template #default="{ close }">
         <LoginFirst @close="close" />
       </template>
