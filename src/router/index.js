@@ -33,6 +33,7 @@ export const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
+  window.scrollTo(0, 0);
   if (to.meta.name) {
     document.title = `${to.meta.name} | 練習作品(參考基富通)`;
   }
