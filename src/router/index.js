@@ -5,6 +5,7 @@ import Login from "@/views/login/Login.vue";
 import Register from "@/views/register/Register.vue";
 import ForgetPassword from "@/views/forgetPassword/ForgetPassword.vue";
 import Aboutus from "@/views/aboutus/Aboutus.vue";
+import Privacy from "@/views/privacy/Privacy.vue";
 
 export const router = createRouter({
   history: createWebHistory("/fundrich/"),
@@ -43,6 +44,13 @@ export const router = createRouter({
       component: Aboutus,
       meta: {
         name: "關於我們",
+      },
+    },
+    {
+      path: "/privacy",
+      component: Privacy,
+      meta: {
+        name: "隱私權保護政策",
       },
     },
   ],

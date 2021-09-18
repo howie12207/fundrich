@@ -21,7 +21,7 @@ const contactList = [
 ];
 
 const linkList = [
-  { label: "隱私權保護政策", path: "" },
+  { label: "隱私權保護政策", path: "privacy" },
   { label: "個人資料保護法聲明", path: "" },
   { label: "網站資訊聲明", path: "" },
   { label: "免責及版權聲明", path: "" },
