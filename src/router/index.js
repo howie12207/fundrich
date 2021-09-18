@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 
 import Home from "@/views/home/Home.vue";
 import Login from "@/views/login/Login.vue";
+import ForgetPassword from "@/views/forgetPassword/ForgetPassword.vue";
 import Aboutus from "@/views/aboutus/Aboutus.vue";
 
 export const router = createRouter({
@@ -20,6 +21,13 @@ export const router = createRouter({
       meta: {
         name: "登入",
         blank: true,
+      },
+    },
+    {
+      path: "/forgetPassword",
+      component: ForgetPassword,
+      meta: {
+        name: "忘記密碼",
       },
     },
     {

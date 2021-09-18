@@ -12,7 +12,7 @@ import marqueeList from "@/assets/marqueeList.json";
 </script>
 
 <template>
-  <div>
+  <div class="bg-gray-200 pb-8">
     <Banner :bannerList="bannerList" />
     <main class="w-full px-4 mx-auto lg:w-lg">
       <div class="flex my-4 gap-x-4">
@@ -23,7 +23,7 @@ import marqueeList from "@/assets/marqueeList.json";
         <MenuCard v-for="item of menu" :key="item.label" :menu="item" />
       </div>
       <RecentView class="mt-16" />
-      <Marquee :marqueeList="marqueeList" class="my-8" />
+      <Marquee :marqueeList="marqueeList" class="mt-8" />
     </main>
   </div>
 </template>

@@ -5,7 +5,7 @@ import FooterBar from "./footer/FooterBar.vue";
 </script>
 
 <template>
-  <div class="bg-gray-200">
+  <div>
     <div class="h-14"><Header class="fixed top-0 z-10" /></div>
     <div class="h-14"><NavbarBox class="fixed z-10 top-14" /></div>
     <slot></slot>

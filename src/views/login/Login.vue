@@ -102,7 +102,7 @@ const imgSrc = (src) => {
           <p>
             <router-link
               class="text-base text-brown-500 mr-2 hover:underline"
-              to="/login"
+              to="/forgetPassword"
               >忘記密碼？</router-link
             >還沒有基金帳戶？<router-link
               class="text-base text-brown-500 hover:underline"
