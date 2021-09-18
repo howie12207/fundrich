@@ -4,6 +4,7 @@ import { useRouter } from "vue-router";
 
 import Mask from "@/components/mask/Mask.vue";
 import LoginFirst from "@/components/layout/popup/LoginFirst.vue";
+import Cart from "@/components/layout/popup/Cart.vue";
 import RightMenu from "@/components/layout/popup/RightMenu.vue";
 
 const loginStatus = ref(false);
@@ -44,6 +45,7 @@ const menuClick = (item) => {
   if (item.label === "登入") router.push(item.path);
   if (item.label === "關於我們") router.push(item.path);
   if (item.label === "收藏清單") popup("favorite");
+  if (item.label === "結帳清單") popup("cart");
   if (item.label === "選單") popup("menu");
 };
 
@@ -88,6 +90,7 @@ const imgSrc = (src) => {
         <LoginFirst @close="close" />
       </template>
     </Mask>
+    <Cart v-else-if="popupOpen === 'cart'" @close="popup" width="320px"> </Cart>
     <RightMenu v-else-if="popupOpen === 'menu'" @close="popup" width="320px">
     </RightMenu>
   </header>
