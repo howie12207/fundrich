@@ -4,6 +4,7 @@ import { useRouter } from "vue-router";
 
 import Mask from "@/components/mask/Mask.vue";
 import LoginFirst from "@/components/layout/popup/LoginFirst.vue";
+import RightMenu from "@/components/layout/popup/RightMenu.vue";
 
 const loginStatus = ref(false);
 
@@ -43,6 +44,7 @@ const menuClick = (item) => {
   if (item.label === "登入") router.push(item.path);
   if (item.label === "關於我們") router.push(item.path);
   if (item.label === "收藏清單") popup("favorite");
+  if (item.label === "選單") popup("menu");
 };
 
 const popupOpen = ref("");
@@ -70,7 +72,7 @@ const imgSrc = (src) => {
             { 'bg-brown-600': item.label === '登入' },
             { hidden: item.label === '關於我們' || item.label === '登入' },
             'lg:flex lg:px-4',
-            { 'lg:hidden': item.label === '菜單' },
+            { 'lg:hidden': item.label === '選單' },
           ]"
           v-for="item of menuFilter"
           :key="item.label"
@@ -86,5 +88,7 @@ const imgSrc = (src) => {
         <LoginFirst @close="close" />
       </template>
     </Mask>
+    <RightMenu v-else-if="popupOpen === 'menu'" @close="popup" width="320px">
+    </RightMenu>
   </header>
 </template>

@@ -26,7 +26,15 @@ import FooterBar from "./footer/FooterBar.vue";
       "
     >
       <router-link
-        class="w-11/12 py-2 text-center text-white bg-brown-600 rounded"
+        class="
+          w-11/12
+          py-2
+          text-center text-white
+          bg-brown-600
+          hover:bg-brown-700
+          transition-all
+          rounded
+        "
         to="/login"
         >登入</router-link
       >

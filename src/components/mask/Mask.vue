@@ -38,7 +38,7 @@ const show = ref(false);
 const close = () => {
   show.value = false;
   setTimeout(() => {
-    emit("close", "");
+    emit("close");
     document.body.style.overflow = "initial";
   }, prop.duration);
 };

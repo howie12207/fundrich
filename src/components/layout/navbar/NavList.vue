@@ -26,7 +26,7 @@ const imgSrc = (src) => {
         :key="item.label"
       >
         <div class="flex">
-          <span class="peer text-lg group-hover:text-brown-500">{{
+          <span class="text-lg group-hover:text-brown-500">{{
             item.label
           }}</span>
           <img
