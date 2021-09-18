@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 import Home from "@/views/home/Home.vue";
+import Login from "@/views/login/Login.vue";
+import Aboutus from "@/views/aboutus/Aboutus.vue";
 
 export const router = createRouter({
   history: createWebHistory("/fundrich/"),
@@ -14,7 +16,7 @@ export const router = createRouter({
     },
     {
       path: "/login",
-      component: () => import("@/views/login/Login.vue"),
+      component: Login,
       meta: {
         name: "登入",
         blank: true,
@@ -22,7 +24,7 @@ export const router = createRouter({
     },
     {
       path: "/aboutus",
-      component: () => import("@/views/aboutus/Aboutus.vue"),
+      component: Aboutus,
       meta: {
         name: "關於我們",
       },

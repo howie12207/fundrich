@@ -12,16 +12,18 @@ import marqueeList from "@/assets/marqueeList.json";
 </script>
 
 <template>
-  <Banner :bannerList="bannerList" />
-  <main class="w-full px-4 mx-auto lg:w-lg">
-    <div class="flex my-4 gap-x-4">
-      <TotalFund />
-      <SearchCard />
-    </div>
-    <div class="flex flex-wrap gap-8">
-      <MenuCard v-for="item of menu" :key="item.label" :menu="item" />
-    </div>
-    <RecentView class="mt-16" />
-    <Marquee :marqueeList="marqueeList" class="my-8" />
-  </main>
+  <div>
+    <Banner :bannerList="bannerList" />
+    <main class="w-full px-4 mx-auto lg:w-lg">
+      <div class="flex my-4 gap-x-4">
+        <TotalFund />
+        <SearchCard />
+      </div>
+      <div class="flex flex-wrap gap-8">
+        <MenuCard v-for="item of menu" :key="item.label" :menu="item" />
+      </div>
+      <RecentView class="mt-16" />
+      <Marquee :marqueeList="marqueeList" class="my-8" />
+    </main>
+  </div>
 </template>
