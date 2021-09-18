@@ -106,7 +106,7 @@ const imgSrc = (src) => {
               >忘記密碼？</router-link
             >還沒有基金帳戶？<router-link
               class="text-base text-brown-500 hover:underline"
-              to="/login"
+              to="/register"
               >立即開戶</router-link
             >
           </p>

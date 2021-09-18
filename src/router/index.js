@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 
 import Home from "@/views/home/Home.vue";
 import Login from "@/views/login/Login.vue";
+import Register from "@/views/register/Register.vue";
 import ForgetPassword from "@/views/forgetPassword/ForgetPassword.vue";
 import Aboutus from "@/views/aboutus/Aboutus.vue";
 
@@ -21,6 +22,13 @@ export const router = createRouter({
       meta: {
         name: "登入",
         blank: true,
+      },
+    },
+    {
+      path: "/register",
+      component: Register,
+      meta: {
+        name: "註冊",
       },
     },
     {
