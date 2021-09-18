@@ -2,6 +2,9 @@
 import { computed, ref } from "vue";
 import { useRouter } from "vue-router";
 
+import Mask from "@/components/mask/Mask.vue";
+import LoginFirst from "@/components/layout/popup/LoginFirst.vue";
+
 const loginStatus = ref(false);
 
 const menu = [
@@ -39,6 +42,12 @@ const router = new useRouter();
 const menuClick = (item) => {
   if (item.label === "登入") router.push(item.path);
   if (item.label === "關於我們") router.push(item.path);
+  if (item.label === "收藏清單") popup("favorite");
+};
+
+const popupOpen = ref("");
+const popup = (target = "") => {
+  popupOpen.value = target;
 };
 
 const imgSrc = (src) => {
@@ -72,5 +81,10 @@ const imgSrc = (src) => {
         </div>
       </div>
     </div>
+    <Mask v-if="popupOpen === 'favorite'" @close="popup" width="400px">
+      <template #default="{ close }">
+        <LoginFirst @close="close" />
+      </template>
+    </Mask>
   </header>
 </template>

@@ -20,8 +20,8 @@ const imgSrc = (src) => {
 </script>
 
 <template>
-  <div class="hidden bg-gray-300 p-4 md:block">
-    <div class="w-full lg:w-lg mx-auto flex gap-x-4">
+  <div class="hidden bg-gray-300 py-4 md:block">
+    <div class="w-full lg:w-lg px-4 mx-auto flex gap-x-4">
       <div
         class="w-1/12 flex-grow"
         v-for="nav of navListFilter"

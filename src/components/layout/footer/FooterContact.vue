@@ -39,8 +39,8 @@ const imgSrc = (src) => {
 </script>
 
 <template>
-  <section class="bg-darkBlue-800 text-white text-sm px-5 py-7">
-    <div class="w-full mx-auto grid md:grid-cols-2 lg:w-lg lg:grid-cols-3">
+  <section class="bg-darkBlue-800 text-white text-sm py-7">
+    <div class="w-full px-5 mx-auto grid md:grid-cols-2 lg:w-lg lg:grid-cols-3">
       <div class="px-3">
         <div class="mb-4"><img :src="imgSrc('logo.svg')" alt="logo" /></div>
         <div class="flex items-center mb-4">
