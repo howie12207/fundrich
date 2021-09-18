@@ -1,8 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 import Home from "@/views/home/Home.vue";
-import Login from "@/views/login/Login.vue";
-// import Aboutus from "@/views/aboutus/Aboutus.vue";
 
 export const router = createRouter({
   history: createWebHistory("/fundrich/"),
@@ -30,4 +28,11 @@ export const router = createRouter({
       },
     },
   ],
+});
+
+router.beforeEach((to, from, next) => {
+  if (to.meta.name) {
+    document.title = `${to.meta.name} | 練習作品(參考基富通)`;
+  }
+  next();
 });
