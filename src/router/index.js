@@ -7,6 +7,7 @@ import Register from "@/views/register/Register.vue";
 import ForgetPassword from "@/views/forgetPassword/ForgetPassword.vue";
 import Aboutus from "@/views/aboutus/Aboutus.vue";
 
+import Step from "@/views/faq/step/Step.vue";
 import Charge from "@/views/faq/charge/Charge.vue";
 
 import RegisterGoing from "@/views/registerGoing/RegisterGoing.vue";
@@ -59,6 +60,13 @@ export const router = createRouter({
       },
     },
 
+    {
+      path: "/faq/step",
+      component: Step,
+      meta: {
+        name: "交易流程",
+      },
+    },
     {
       path: "/faq/charge",
       component: Charge,
