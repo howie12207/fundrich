@@ -59,11 +59,11 @@ const imgSrc = (src) => {
             </h5>
             <ul>
               <li
-                class="my-2 cursor-pointer hover:text-brown-500 hover:underline"
+                class="my-2 hover:text-brown-500 hover:underline"
                 v-for="child of sub.sub"
                 :key="child.label"
               >
-                {{ child.label }}
+                <router-link :to="child.path">{{ child.label }}</router-link>
               </li>
             </ul>
           </div>

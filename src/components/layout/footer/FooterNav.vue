@@ -30,9 +30,11 @@ const imgSrc = (src) => {
         <h4 class="py-2 mb-3 border-b border-gray-400">{{ nav.label }}</h4>
         <ul v-if="nav.sub">
           <li class="text-sm" v-for="sub of nav.sub" :key="sub.label">
-            <router-link class="inline-block mb-3 hover:underline" to="">{{
-              sub.label
-            }}</router-link>
+            <router-link
+              class="inline-block mb-3 hover:underline"
+              :to="sub.path"
+              >{{ sub.label }}</router-link
+            >
           </li>
         </ul>
       </div>

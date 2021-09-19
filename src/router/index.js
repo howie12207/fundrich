@@ -5,6 +5,8 @@ import Login from "@/views/login/Login.vue";
 import Register from "@/views/register/Register.vue";
 import ForgetPassword from "@/views/forgetPassword/ForgetPassword.vue";
 import Aboutus from "@/views/aboutus/Aboutus.vue";
+import Download from "@/views/download/Download.vue";
+
 import Privacy from "@/views/privacy/Privacy.vue";
 import PersonalInfo from "@/views/personalInfo/PersonalInfo.vue";
 import WebInfo from "@/views/webInfo/WebInfo.vue";
@@ -51,6 +53,14 @@ export const router = createRouter({
         name: "關於我們",
       },
     },
+    {
+      path: "/download",
+      component: Download,
+      meta: {
+        name: "下載專區",
+      },
+    },
+
     {
       path: "/privacy",
       component: Privacy,

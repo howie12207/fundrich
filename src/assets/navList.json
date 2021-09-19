@@ -161,7 +161,7 @@
       },
       {
         "label": "檔案下載",
-        "sub": [{ "label": "開戶元件下載", "path": "" }]
+        "sub": [{ "label": "開戶元件下載", "path": "/download" }]
       }
     ]
   }
