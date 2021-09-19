@@ -10,6 +10,7 @@ import PersonalInfo from "@/views/personalInfo/PersonalInfo.vue";
 import WebInfo from "@/views/webInfo/WebInfo.vue";
 import Disclaimer from "@/views/disclaimer/Disclaimer.vue";
 import FriendlyService from "@/views/friendlyService/FriendlyService.vue";
+import Reporting from "@/views/reporting/Reporting.vue";
 
 export const router = createRouter({
   history: createWebHistory("/fundrich/"),
@@ -81,6 +82,13 @@ export const router = createRouter({
     {
       path: "/friendlyService",
       component: FriendlyService,
+      meta: {
+        name: "金融友善服務專區",
+      },
+    },
+    {
+      path: "/reporting",
+      component: Reporting,
       meta: {
         name: "金融友善服務專區",
       },

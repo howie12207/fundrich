@@ -27,8 +27,11 @@ const linkList = [
   { label: "免責及版權聲明", path: "disclaimer" },
   { label: "金融消費爭議處理專區", href: "https://www.foi.org.tw/" },
   { label: "金融友善服務專區", path: "friendlyService" },
-  { label: "防制洗錢及打擊資助恐怖主義專區", path: "" },
-  { label: "檢舉制度", path: "" },
+  {
+    label: "防制洗錢及打擊資助恐怖主義專區",
+    href: "http://money.twsa.org.tw/",
+  },
+  { label: "檢舉制度", path: "reporting" },
 ];
 
 const imgSrc = (src) => {
