@@ -1,11 +1,11 @@
 <script setup>
-const privacy = [
+const listData = [
   {
     content: "個人資料之蒐集來源",
     sub: [
       {
         content:
-          " 當您於本網站參與線上申請、行銷活動或相關問卷調查活動時，我們可能會請您提供中、英文姓名（公司名稱）、身份證字號（統一編號）、出生日期、電話、電子郵件信箱、住址以及其它相關必要資料。",
+          "當您於本網站參與線上申請、行銷活動或相關問卷調查活動時，我們可能會請您提供中、英文姓名（公司名稱）、身份證字號（統一編號）、出生日期、電話、電子郵件信箱、住址以及其它相關必要資料。",
       },
       {
         content:
@@ -99,7 +99,7 @@ const privacy = [
       歡迎您光臨基富通網站（以下簡稱本網站），謹說明本網站的隱私權保護政策如下：
     </p>
     <ul class="list pl-8 pr-4">
-      <li v-for="list of privacy" :key="list.content">
+      <li v-for="list of listData" :key="list.content">
         <p class="my-2">{{ list.content }}</p>
         <p class="my-2">{{ list.remark }}</p>
         <ul class="list-decimal pl-4">
@@ -109,19 +109,6 @@ const privacy = [
         </ul>
       </li>
     </ul>
-    <!-- <ul class="list pl-8 pr-4">
-      <li class="my-2">
-        個人資料之蒐集來源
-        <ul class="list-decimal">
-          <li class="my-2">
-            當您於本網站參與線上申請、行銷活動或相關問卷調查活動時，我們可能會請您提供中、英文姓名（公司名稱）、身份證字號（統一編號）、出生日期、電話、電子郵件信箱、住址以及其它相關必要資料。
-          </li>
-          <li class="my-2">
-            當您申請註冊成為本網站之會員，使用本網站內容服務時，我們會請您提供相關個人資料，包括：姓名、暱稱、住址、電話、電子郵件信箱以及其他可能必要的資料。
-          </li>
-        </ul>
-      </li>
-    </ul> -->
   </div>
 </template>
 
