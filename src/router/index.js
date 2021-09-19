@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 
+import NotFound from "@/views/notFound/NotFound.vue";
 import Home from "@/views/home/Home.vue";
 import Login from "@/views/login/Login.vue";
 import Register from "@/views/register/Register.vue";
@@ -113,6 +114,14 @@ export const router = createRouter({
       component: Reporting,
       meta: {
         name: "金融友善服務專區",
+      },
+    },
+    {
+      path: "/:pathMatch(.*)*",
+      component: NotFound,
+      meta: {
+        name: "找不到頁面",
+        blank: true,
       },
     },
   ],
