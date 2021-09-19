@@ -152,10 +152,10 @@
       {
         "label": "免費開戶",
         "sub": [
-          { "label": "開戶註冊", "path": "" },
-          { "label": "繼續完成開戶", "path": "" },
-          { "label": "變更開戶方式", "path": "" },
-          { "label": "開戶進度查詢", "path": "" },
+          { "label": "開戶註冊", "path": "/register" },
+          { "label": "繼續完成開戶", "path": "/registerGoing?type=2" },
+          { "label": "變更開戶方式", "path": "/registerGoing?type=3" },
+          { "label": "開戶進度查詢", "path": "/registerGoing?type=4" },
           { "label": "開戶教學", "path": "" }
         ]
       },

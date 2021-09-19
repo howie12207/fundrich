@@ -5,6 +5,7 @@ import Login from "@/views/login/Login.vue";
 import Register from "@/views/register/Register.vue";
 import ForgetPassword from "@/views/forgetPassword/ForgetPassword.vue";
 import Aboutus from "@/views/aboutus/Aboutus.vue";
+import RegisterGoing from "@/views/registerGoing/RegisterGoing.vue";
 import Download from "@/views/download/Download.vue";
 
 import Privacy from "@/views/privacy/Privacy.vue";
@@ -51,6 +52,17 @@ export const router = createRouter({
       component: Aboutus,
       meta: {
         name: "關於我們",
+      },
+    },
+    {
+      path: "/registerGoing",
+      component: RegisterGoing,
+      meta: {
+        name: {
+          2: "繼續完成開戶",
+          3: "變更開戶方式",
+          4: "開戶進度查詢",
+        },
       },
     },
     {
@@ -109,7 +121,10 @@ export const router = createRouter({
 router.beforeEach((to, from, next) => {
   window.scrollTo(0, 0);
   if (to.meta.name) {
-    document.title = `${to.meta.name} | 練習作品(參考基富通) 無任何商業行為`;
+    let name = to.meta.name;
+    if (typeof to.meta.name === "object")
+      name = to.meta.name[to.query.type] || "";
+    document.title = `${name} | 練習作品(參考基富通) 無任何商業行為`;
   }
   next();
 });
