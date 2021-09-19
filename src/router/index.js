@@ -6,6 +6,9 @@ import Login from "@/views/login/Login.vue";
 import Register from "@/views/register/Register.vue";
 import ForgetPassword from "@/views/forgetPassword/ForgetPassword.vue";
 import Aboutus from "@/views/aboutus/Aboutus.vue";
+
+import Charge from "@/views/faq/charge/Charge.vue";
+
 import RegisterGoing from "@/views/registerGoing/RegisterGoing.vue";
 import Download from "@/views/download/Download.vue";
 
@@ -55,6 +58,15 @@ export const router = createRouter({
         name: "關於我們",
       },
     },
+
+    {
+      path: "/faq/charge",
+      component: Charge,
+      meta: {
+        name: "收費標準",
+      },
+    },
+
     {
       path: "/registerGoing",
       component: RegisterGoing,

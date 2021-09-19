@@ -41,7 +41,9 @@ const imgSrc = (src) => {
 <template>
   <div class="register px-4 py-8">
     <div class="lg:w-lg mx-auto">
-      <h3 class="title text-center text-white text-3xl">請選擇開戶方式</h3>
+      <h3 class="text-shadow text-center text-white text-3xl">
+        請選擇開戶方式
+      </h3>
       <div class="flex justify-evenly gap-x-2 lg:gap-x-6 mt-4 mb-8">
         <div
           :class="[
@@ -91,9 +93,6 @@ const imgSrc = (src) => {
 <style scoped>
 .register {
   background: url("./img/bg.jpg");
-}
-.title {
-  text-shadow: 1px 1px 3px #000;
 }
 .arrow {
   @apply absolute -bottom-8 left-1/2 -translate-x-1/2 w-0 h-0;

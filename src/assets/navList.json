@@ -104,10 +104,10 @@
       {
         "label": "常見問題",
         "sub": [
-          { "label": "分類查詢", "path": "" },
-          { "label": "交易流程", "path": "" },
-          { "label": "交易規則", "path": "" },
-          { "label": "收費標準", "path": "" }
+          { "label": "分類查詢", "path": "/faq/list" },
+          { "label": "交易流程", "path": "/faq/step" },
+          { "label": "交易規則", "path": "/faq/rules" },
+          { "label": "收費標準", "path": "/faq/charge" }
         ]
       }
     ]
@@ -155,8 +155,7 @@
           { "label": "開戶註冊", "path": "/register" },
           { "label": "繼續完成開戶", "path": "/registerGoing?type=2" },
           { "label": "變更開戶方式", "path": "/registerGoing?type=3" },
-          { "label": "開戶進度查詢", "path": "/registerGoing?type=4" },
-          { "label": "開戶教學", "path": "" }
+          { "label": "開戶進度查詢", "path": "/registerGoing?type=4" }
         ]
       },
       {

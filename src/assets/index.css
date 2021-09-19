@@ -6,6 +6,7 @@
   .indent-2 {
     text-indent: 2rem;
   }
+
   .list-cjk {
     list-style-type: cjk-decimal;
   }
@@ -14,6 +15,10 @@
   }
   .list-lower-latin {
     list-style-type: lower-latin;
+  }
+
+  .text-shadow {
+    text-shadow: 1px 1px 3px #000;
   }
 }
 
