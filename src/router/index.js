@@ -8,6 +8,7 @@ import Aboutus from "@/views/aboutus/Aboutus.vue";
 import Privacy from "@/views/privacy/Privacy.vue";
 import PersonalInfo from "@/views/personalInfo/PersonalInfo.vue";
 import WebInfo from "@/views/webInfo/WebInfo.vue";
+import Disclaimer from "@/views/disclaimer/Disclaimer.vue";
 
 export const router = createRouter({
   history: createWebHistory("/fundrich/"),
@@ -69,13 +70,20 @@ export const router = createRouter({
         name: "網站資訊聲明",
       },
     },
+    {
+      path: "/disclaimer",
+      component: Disclaimer,
+      meta: {
+        name: "免責及版權聲明",
+      },
+    },
   ],
 });
 
 router.beforeEach((to, from, next) => {
   window.scrollTo(0, 0);
   if (to.meta.name) {
-    document.title = `${to.meta.name} | 練習作品(參考基富通)`;
+    document.title = `${to.meta.name} | 練習作品(參考基富通) 無任何商業行為`;
   }
   next();
 });

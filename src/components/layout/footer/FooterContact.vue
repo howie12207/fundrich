@@ -24,7 +24,7 @@ const linkList = [
   { label: "隱私權保護政策", path: "privacy" },
   { label: "個人資料保護法聲明", path: "personalInfo" },
   { label: "網站資訊聲明", path: "webInfo" },
-  { label: "免責及版權聲明", path: "" },
+  { label: "免責及版權聲明", path: "disclaimer" },
   { label: "金融消費爭議處理專區", path: "" },
   { label: "金融友善服務專區", path: "" },
   { label: "防制洗錢及打擊資助恐怖主義專區", path: "" },
