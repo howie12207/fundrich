@@ -22,7 +22,7 @@ const listData = [
 <template>
   <div class="p-2 lg:w-lg lg:mx-auto">
     <h2 class="text-center text-xl font-black mb-4">免責及版權聲明</h2>
-    <ul class="list pl-8 pr-4">
+    <ul class="list-cjk pl-8 pr-4">
       <li v-for="list of listData" :key="list.content">
         <p class="my-2">{{ list.content }}</p>
         <p class="my-2">{{ list.remark }}</p>
@@ -55,9 +55,3 @@ const listData = [
     </p>
   </div>
 </template>
-
-<style scoped>
-.list {
-  list-style-type: cjk-decimal;
-}
-</style>

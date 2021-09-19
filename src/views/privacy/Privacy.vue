@@ -98,7 +98,7 @@ const listData = [
     <p class="mb-2">
       歡迎您光臨基富通網站（以下簡稱本網站），謹說明本網站的隱私權保護政策如下：
     </p>
-    <ul class="list pl-8 pr-4">
+    <ul class="list-cjk pl-8 pr-4">
       <li v-for="list of listData" :key="list.content">
         <p class="my-2">{{ list.content }}</p>
         <p class="my-2">{{ list.remark }}</p>
@@ -111,9 +111,3 @@ const listData = [
     </ul>
   </div>
 </template>
-
-<style scoped>
-.list {
-  list-style-type: cjk-decimal;
-}
-</style>

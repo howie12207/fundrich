@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .indent-2 {
+    text-indent: 2rem;
+  }
+  .list-cjk {
+    list-style-type: cjk-decimal;
+  }
+  .list-upper-latin {
+    list-style-type: upper-latin;
+  }
+  .list-lower-latin {
+    list-style-type: lower-latin;
+  }
+}
+
 .fade-enter-active,
 .fade-leave-active {
   opacity: 1;

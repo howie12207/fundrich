@@ -195,7 +195,7 @@ const listData2 = [
 <template>
   <div class="p-2 lg:w-lg lg:mx-auto">
     <h2 class="text-center text-xl font-black mb-4">個人資料保護法聲明</h2>
-    <ul class="list pl-8 pr-4">
+    <ul class="list-cjk pl-8 pr-4">
       <li v-for="list of listData" :key="list.content">
         <p class="my-2">{{ list.content }}</p>
         <p class="my-2">{{ list.remark }}</p>
@@ -218,7 +218,7 @@ const listData2 = [
     <p class="my-2">
       依據個人資料保護法，　台端同意本公司、關係企業及第三方及其承包商、顧問及關係企業，亦得於上述特定目的外處理個人資料：
     </p>
-    <ul class="list pl-8 pr-4">
+    <ul class="list-cjk pl-8 pr-4">
       <li v-for="list of listData2" :key="list.content">
         <p class="my-2">{{ list.content }}</p>
         <p class="my-2">{{ list.remark }}</p>
@@ -238,9 +238,3 @@ const listData2 = [
     </ul>
   </div>
 </template>
-
-<style scoped>
-.list {
-  list-style-type: cjk-decimal;
-}
-</style>

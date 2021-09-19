@@ -25,8 +25,8 @@ const linkList = [
   { label: "個人資料保護法聲明", path: "personalInfo" },
   { label: "網站資訊聲明", path: "webInfo" },
   { label: "免責及版權聲明", path: "disclaimer" },
-  { label: "金融消費爭議處理專區", path: "" },
-  { label: "金融友善服務專區", path: "" },
+  { label: "金融消費爭議處理專區", href: "https://www.foi.org.tw/" },
+  { label: "金融友善服務專區", path: "friendlyService" },
   { label: "防制洗錢及打擊資助恐怖主義專區", path: "" },
   { label: "檢舉制度", path: "" },
 ];
@@ -99,7 +99,7 @@ const imgSrc = (src) => {
           lg:gap-3
         "
       >
-        <router-link
+        <component
           v-for="link of linkList"
           class="
             inline-block
@@ -108,9 +108,12 @@ const imgSrc = (src) => {
             justify-self-start
             hover:underline hover:text-brown-500
           "
+          :is="link.href ? 'a' : 'router-link'"
           :key="link.label"
           :to="link.path"
-          >{{ link.label }}</router-link
+          :href="link.href"
+          :target="link.href ? '_blank' : '_self'"
+          >{{ link.label }}</component
         >
       </div>
     </div>

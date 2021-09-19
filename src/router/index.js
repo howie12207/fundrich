@@ -9,6 +9,7 @@ import Privacy from "@/views/privacy/Privacy.vue";
 import PersonalInfo from "@/views/personalInfo/PersonalInfo.vue";
 import WebInfo from "@/views/webInfo/WebInfo.vue";
 import Disclaimer from "@/views/disclaimer/Disclaimer.vue";
+import FriendlyService from "@/views/friendlyService/FriendlyService.vue";
 
 export const router = createRouter({
   history: createWebHistory("/fundrich/"),
@@ -75,6 +76,13 @@ export const router = createRouter({
       component: Disclaimer,
       meta: {
         name: "免責及版權聲明",
+      },
+    },
+    {
+      path: "/friendlyService",
+      component: FriendlyService,
+      meta: {
+        name: "金融友善服務專區",
       },
     },
   ],
