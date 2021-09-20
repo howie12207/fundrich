@@ -8,6 +8,7 @@ import ForgetPassword from "@/views/forgetPassword/ForgetPassword.vue";
 import Aboutus from "@/views/aboutus/Aboutus.vue";
 
 import Step from "@/views/faq/step/Step.vue";
+import Rules from "@/views/faq/rules/Rules.vue";
 import Charge from "@/views/faq/charge/Charge.vue";
 
 import RegisterGoing from "@/views/registerGoing/RegisterGoing.vue";
@@ -65,6 +66,13 @@ export const router = createRouter({
       component: Step,
       meta: {
         name: "交易流程",
+      },
+    },
+    {
+      path: "/faq/rules",
+      component: Rules,
+      meta: {
+        name: "交易規則",
       },
     },
     {
