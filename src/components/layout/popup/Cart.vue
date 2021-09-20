@@ -4,7 +4,7 @@ import { useRouter } from "vue-router";
 
 const router = useRouter();
 
-import IconX from "./IconX.vue";
+import IconX from "@/components/icon/IconX.vue";
 
 import menu from "@/assets/navList.json";
 

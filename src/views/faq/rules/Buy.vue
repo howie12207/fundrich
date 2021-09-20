@@ -42,7 +42,7 @@ const expand = (num) => {
       >
         <p>{{ faq.title }}</p>
         <IconChevron
-          direction="top"
+          direction="bottom"
           :class="[
             'transition-all',
             expandList.includes(faq.id) && 'rotate-180',

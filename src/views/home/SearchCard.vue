@@ -1,6 +1,9 @@
 <script setup>
 import { ref } from "vue";
+
 import keywords from "@/assets/searchCard.json";
+
+import IconChevron from "@/components/icon/IconChevron.vue";
 
 // Todo: search功能、點擊keyword功能
 
@@ -54,13 +57,13 @@ const imgSrc = (src) => {
     </div>
     <div class="text-white mt-4 flex items-center">
       <span class="flex-shrink-0">熱門關鍵字</span>
-      <img
+      <IconChevron
+        :size="14"
         :class="[
-          'rotate-180 cursor-pointer',
+          'mx-1 cursor-pointer',
           !prevBtn && 'opacity-30 cursor-not-allowed',
         ]"
-        :src="imgSrc('chevron_right.svg')"
-        alt="chevron_left"
+        direction="left"
         @click="scrollTo(-1)"
       />
       <div ref="keywordBar" class="overflow-x-hidden flex gap-x-2">
@@ -81,10 +84,13 @@ const imgSrc = (src) => {
           >{{ tag.label }}</span
         >
       </div>
-      <img
-        :class="['cursor-pointer', !nextBtn && 'opacity-30 cursor-not-allowed']"
-        :src="imgSrc('chevron_right.svg')"
-        alt="chevron_left"
+      <IconChevron
+        :size="14"
+        :class="[
+          'mx-1 cursor-pointer',
+          !nextBtn && 'opacity-30 cursor-not-allowed',
+        ]"
+        direction="right"
         @click="scrollTo(1)"
       />
     </div>

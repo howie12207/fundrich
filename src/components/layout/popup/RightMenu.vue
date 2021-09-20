@@ -4,7 +4,8 @@ import { useRouter } from "vue-router";
 
 const router = useRouter();
 
-import IconX from "./IconX.vue";
+import IconX from "@/components/icon/IconX.vue";
+import IconChevron from "@/components/icon/IconChevron.vue";
 
 import menu from "@/assets/navList.json";
 
@@ -71,11 +72,6 @@ const style = computed(() => {
     "--popupDuration": `${prop.duration / 1000}s`,
   };
 });
-const imgSrc = (src) => {
-  const path = `./img/${src}`;
-  const modules = import.meta.globEager("./img/*.svg");
-  return modules[path].default;
-};
 </script>
 
 <template>
@@ -96,15 +92,25 @@ const imgSrc = (src) => {
               :key="item.label"
             >
               <div
-                class="flex justify-between px-6 py-3 cursor-pointer"
+                class="
+                  flex
+                  justify-between
+                  items-center
+                  px-6
+                  py-3
+                  cursor-pointer
+                "
                 @click="expand(item.path, index)"
               >
                 <span class="text-lg">{{ item.label }}</span>
-                <img
+                <IconChevron
                   v-if="item.sub"
-                  :class="['transition-all', { 'rotate-180': item.expand }]"
-                  :src="imgSrc('chevron.svg')"
-                  alt="chevron"
+                  :size="16"
+                  direction="bottom"
+                  :class="[
+                    'text-brown-500 transition-all',
+                    item.expand && 'rotate-180',
+                  ]"
                 />
               </div>
               <transition name="expand">

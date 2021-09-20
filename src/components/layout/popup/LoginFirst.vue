@@ -1,6 +1,9 @@
 <script setup>
 import { defineEmits } from "vue";
 import { useRouter } from "vue-router";
+
+import IconX from "@/components/icon/IconX.vue";
+
 const emits = defineEmits(["close"]);
 const router = useRouter();
 
@@ -8,8 +11,6 @@ const routeTo = (url) => {
   emits("close");
   router.push(url);
 };
-
-import IconX from "./IconX.vue";
 </script>
 
 <template>

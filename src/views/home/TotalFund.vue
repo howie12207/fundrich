@@ -1,14 +1,10 @@
 <script setup>
+import IconChevron from "@/components/icon/IconChevron.vue";
+
 const tabs = [
   { label: "境內", path: "" },
   { label: "境外", path: "" },
 ];
-
-const imgSrc = (src) => {
-  const path = `./img/${src}`;
-  const modules = import.meta.globEager("./img/*");
-  return modules[path].default;
-};
 </script>
 
 <template>
@@ -50,18 +46,21 @@ const imgSrc = (src) => {
           py-1.5
           flex
           justify-center
+          items-center
           hover:opacity-70
           transition-all
         "
         v-for="tab of tabs"
         :key="tab.label"
         to="/"
-        >{{ tab.label
-        }}<img
-          class="ml-2"
-          :src="imgSrc('chevron_right_circle.svg')"
-          alt="chevron_right"
-      /></router-link>
+        >{{ tab.label }}
+        <IconChevron
+          bgColor="#fff"
+          :size="12"
+          class="text-brown-500 ml-2 p-2"
+          direction="right"
+        />
+      </router-link>
       <div class="absolute right-1/2 w-0.25 h-3/5 bg-white"></div>
     </div>
   </section>

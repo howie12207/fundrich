@@ -1,16 +1,25 @@
 <script setup>
-const imgSrc = (src) => {
-  const path = `./img/${src}`;
-  const modules = import.meta.globEager("./img/*.svg");
-  return modules[path].default;
-};
+import IconChevron from "@/components/icon/IconChevron.vue";
 </script>
 
 <template>
   <div
-    class="text-white bg-brown-500 rounded-l-lg shadow-md p-1 cursor-pointer"
+    class="
+      text-white
+      bg-brown-500
+      rounded-l-lg
+      shadow-md
+      p-1
+      cursor-pointer
+      flex flex-col
+      items-center
+    "
   >
-    <img :src="imgSrc('chevron.svg')" alt="chevron" />
+    <IconChevron
+      :size="16"
+      direction="left"
+      :class="['text-white transition-all mb-1']"
+    />
     <span class="text">意見回饋</span>
   </div>
 </template>

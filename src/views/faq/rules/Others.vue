@@ -14,7 +14,7 @@ const expand = (num) => {
 
 <template>
   <section>
-    <h2 class="font-black text-2xl my-4">4. 費用</h2>
+    <h2 class="font-black text-2xl my-4">7. 其他</h2>
     <div
       v-for="faq of dataList"
       :key="faq.id"
@@ -33,7 +33,7 @@ const expand = (num) => {
       >
         <p>{{ faq.title }}</p>
         <IconChevron
-          direction="top"
+          direction="bottom"
           :class="[
             'transition-all',
             expandList.includes(faq.id) && 'rotate-180',

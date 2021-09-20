@@ -1,4 +1,6 @@
 <script setup>
+import IconChevron from "@/components/icon/IconChevron.vue";
+
 // Todo: path位置
 defineProps({
   menu: {
@@ -39,13 +41,14 @@ const imgSrc = (src) => {
     <ul class="flex flex-wrap gap-2 mt-2" v-if="menu.sub">
       <li
         :class="[
-          'menu relative w-1/2 lg:w-1/3 flex-grow p-2 cursor-pointer hover:underline hover:text-brown-400',
+          'relative w-1/2 lg:w-1/3 flex-grow p-2 cursor-pointer hover:underline hover:text-brown-400',
           { 'font-bold': subMenu.remark },
           { 'text-red-500': subMenu.remark === 'Hot' },
         ]"
         v-for="subMenu of menu.sub"
         :key="subMenu.label"
       >
+        <IconChevron :size="12" direction="right" />
         {{ subMenu.label }}
         <span
           class="absolute top-0 bg-red-600 p-1 ml-1 rounded text-white text-xs"
@@ -56,15 +59,3 @@ const imgSrc = (src) => {
     </ul>
   </div>
 </template>
-
-<style scoped>
-.menu::before {
-  content: "";
-  display: inline-block;
-  background: url("./img/chevron_right_color.svg");
-  background-size: 16px;
-  width: 16px;
-  height: 16px;
-  vertical-align: middle;
-}
-</style>

@@ -1,11 +1,7 @@
 <script setup>
 import menu from "/src/assets/navList.json";
 
-const imgSrc = (src) => {
-  const path = `./img/${src}`;
-  const modules = import.meta.globEager("./img/*.svg");
-  return modules[path].default;
-};
+import IconChevron from "@/components/icon/IconChevron.vue";
 </script>
 
 <template>
@@ -25,14 +21,14 @@ const imgSrc = (src) => {
         v-for="item of menu"
         :key="item.label"
       >
-        <div class="flex">
-          <span class="text-lg group-hover:text-brown-500">{{
+        <div class="flex items-center">
+          <span class="text-lg mr-2 group-hover:text-brown-500">{{
             item.label
           }}</span>
-          <img
-            class="group-hover:rotate-180 transition-all"
-            :src="imgSrc('chevron.svg')"
-            alt="chevron"
+          <IconChevron
+            :size="16"
+            direction="bottom"
+            class="text-brown-500 transition-all group-hover:rotate-180"
           />
         </div>
         <div

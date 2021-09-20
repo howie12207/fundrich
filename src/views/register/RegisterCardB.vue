@@ -1,9 +1,5 @@
 <script setup>
-const imgSrc = (src) => {
-  const path = `./img/${src}`;
-  const modules = import.meta.globEager("./img/*");
-  return modules[path].default;
-};
+import IconChevron from "@/components/icon/IconChevron.vue";
 </script>
 
 <template>
@@ -24,10 +20,11 @@ const imgSrc = (src) => {
       "
     >
       前往開戶
-      <img
-        class="w-6 p-1 ml-4 bg-white rounded-full group-hover:animate-pulse"
-        :src="imgSrc('chevron.png')"
-        alt="chevron"
+      <IconChevron
+        bgColor="#fff"
+        :size="20"
+        class="text-brown-500 ml-4 group-hover:animate-pulse"
+        direction="right"
       />
     </router-link>
     <ul class="list-disc px-8">
