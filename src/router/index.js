@@ -7,6 +7,7 @@ import Register from "@/views/register/Register.vue";
 import ForgetPassword from "@/views/forgetPassword/ForgetPassword.vue";
 import Aboutus from "@/views/aboutus/Aboutus.vue";
 
+import List from "@/views/faq/list/List.vue";
 import Step from "@/views/faq/step/Step.vue";
 import Rules from "@/views/faq/rules/Rules.vue";
 import Charge from "@/views/faq/charge/Charge.vue";
@@ -61,6 +62,13 @@ export const router = createRouter({
       },
     },
 
+    {
+      path: "/faq/list",
+      component: List,
+      meta: {
+        name: "分類查詢",
+      },
+    },
     {
       path: "/faq/step",
       component: Step,
