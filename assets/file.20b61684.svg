@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 40 40" version="1.1">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Icon/Product/40/PDF</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icon/Product/40/PDF" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Path" points="0 0 40 0 40 40 0 40"/>
+        <path d="M32.69,10.69 L27.9766667,5.97666667 C27.3516667,5.35166667 26.5033333,5 25.62,5 L13.6666667,5 C11.825,5 10.3333333,6.49166667 10.3333333,8.33333333 L10.3333333,31.6666667 C10.3333333,33.5083333 11.825,35 13.6666667,35 L30.3333333,35 C32.175,35 33.6666667,33.5083333 33.6666667,31.6666667 L33.6666667,13.0466667 C33.6666667,12.1633333 33.315,11.315 32.69,10.69 L32.69,10.69 Z" id="Path" stroke="#1C5E75" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M33.6666667,13.3333333 L27,13.3333333 C26.08,13.3333333 25.3333333,12.5866667 25.3333333,11.6666667 L25.3333333,5" id="Path" stroke="#1C5E75" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect id="Rectangle" stroke="#CC9900" stroke-width="2" fill="#FCEBB6" stroke-linecap="round" stroke-linejoin="round" x="4" y="17" width="23" height="11"/>
+        <text id="PDF" font-family="SFProRounded-Heavy, SF Pro Rounded" font-size="8" font-weight="600" fill="#CC9900">
+            <tspan x="8" y="25.5">PDF</tspan>
+        </text>
+    </g>
+</svg>
