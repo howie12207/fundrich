@@ -1,26 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 
-import NotFound from "@/views/notFound/NotFound.vue";
 import Home from "@/views/home/Home.vue";
 import Login from "@/views/login/Login.vue";
-import Register from "@/views/register/Register.vue";
-import ForgetPassword from "@/views/forgetPassword/ForgetPassword.vue";
-import Aboutus from "@/views/aboutus/Aboutus.vue";
-
-import List from "@/views/faq/list/List.vue";
-import Step from "@/views/faq/step/Step.vue";
-import Rules from "@/views/faq/rules/Rules.vue";
-import Charge from "@/views/faq/charge/Charge.vue";
-
-import RegisterGoing from "@/views/registerGoing/RegisterGoing.vue";
-import Download from "@/views/download/Download.vue";
-
-import Privacy from "@/views/privacy/Privacy.vue";
-import PersonalInfo from "@/views/personalInfo/PersonalInfo.vue";
-import WebInfo from "@/views/webInfo/WebInfo.vue";
-import Disclaimer from "@/views/disclaimer/Disclaimer.vue";
-import FriendlyService from "@/views/friendlyService/FriendlyService.vue";
-import Reporting from "@/views/reporting/Reporting.vue";
 
 export const router = createRouter({
   history: createWebHistory("/fundrich/"),
@@ -42,50 +23,58 @@ export const router = createRouter({
     },
     {
       path: "/register",
-      component: Register,
+      component: () => import("@/views/register/Register.vue"),
       meta: {
         name: "註冊",
       },
     },
     {
       path: "/forgetPassword",
-      component: ForgetPassword,
+      component: () => import("@/views/forgetPassword/ForgetPassword.vue"),
       meta: {
         name: "忘記密碼",
       },
     },
     {
       path: "/aboutus",
-      component: Aboutus,
+      component: () => import("@/views/aboutus/Aboutus.vue"),
       meta: {
         name: "關於我們",
       },
     },
 
     {
+      path: "/promotions/:id",
+      component: () => import("@/views/promotions/Promotions.vue"),
+      meta: {
+        name: "最新活動",
+      },
+    },
+
+    {
       path: "/faq/list",
-      component: List,
+      component: () => import("@/views/faq/list/List.vue"),
       meta: {
         name: "分類查詢",
       },
     },
     {
       path: "/faq/step",
-      component: Step,
+      component: () => import("@/views/faq/step/Step.vue"),
       meta: {
         name: "交易流程",
       },
     },
     {
       path: "/faq/rules",
-      component: Rules,
+      component: () => import("@/views/faq/rules/Rules.vue"),
       meta: {
         name: "交易規則",
       },
     },
     {
       path: "/faq/charge",
-      component: Charge,
+      component: () => import("@/views/faq/charge/Charge.vue"),
       meta: {
         name: "收費標準",
       },
@@ -93,7 +82,7 @@ export const router = createRouter({
 
     {
       path: "/registerGoing",
-      component: RegisterGoing,
+      component: () => import("@/views/registerGoing/RegisterGoing.vue"),
       meta: {
         name: {
           2: "繼續完成開戶",
@@ -104,7 +93,7 @@ export const router = createRouter({
     },
     {
       path: "/download",
-      component: Download,
+      component: () => import("@/views/download/Download.vue"),
       meta: {
         name: "下載專區",
       },
@@ -112,49 +101,49 @@ export const router = createRouter({
 
     {
       path: "/privacy",
-      component: Privacy,
+      component: () => import("@/views/privacy/Privacy.vue"),
       meta: {
         name: "隱私權保護政策",
       },
     },
     {
       path: "/personalInfo",
-      component: PersonalInfo,
+      component: () => import("@/views/personalInfo/PersonalInfo.vue"),
       meta: {
         name: "個人資料保護法聲明",
       },
     },
     {
       path: "/webInfo",
-      component: WebInfo,
+      component: () => import("@/views/webInfo/WebInfo.vue"),
       meta: {
         name: "網站資訊聲明",
       },
     },
     {
       path: "/disclaimer",
-      component: Disclaimer,
+      component: () => import("@/views/disclaimer/Disclaimer.vue"),
       meta: {
         name: "免責及版權聲明",
       },
     },
     {
       path: "/friendlyService",
-      component: FriendlyService,
+      component: () => import("@/views/friendlyService/FriendlyService.vue"),
       meta: {
         name: "金融友善服務專區",
       },
     },
     {
       path: "/reporting",
-      component: Reporting,
+      component: () => import("@/views/reporting/Reporting.vue"),
       meta: {
         name: "金融友善服務專區",
       },
     },
     {
       path: "/:pathMatch(.*)*",
-      component: NotFound,
+      component: () => import("@/views/notFound/NotFound.vue"),
       meta: {
         name: "找不到頁面",
         blank: true,

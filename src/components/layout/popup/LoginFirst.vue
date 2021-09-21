@@ -1,5 +1,4 @@
 <script setup>
-import { defineEmits } from "vue";
 import { useRouter } from "vue-router";
 
 import IconX from "@/components/icon/IconX.vue";
