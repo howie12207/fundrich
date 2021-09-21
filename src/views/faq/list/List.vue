@@ -19,6 +19,7 @@ const tabs = [
 const activeTab = ref("open");
 const changeTab = (tab) => {
   activeTab.value = tab;
+  window.scroll(0, 0);
 };
 
 const imgSrc = (src) => {
@@ -29,41 +30,43 @@ const imgSrc = (src) => {
 </script>
 
 <template>
-  <div class="lg:w-lg lg:mx-auto">
-    <section class="mt-8">
-      <div class="grid grid-cols-3">
-        <div
-          v-for="tab of tabs"
-          :key="tab.id"
-          :class="[
-            'text-center border py-2 cursor-pointer transition-all',
-            activeTab === tab.value && 'text-white bg-brown-500',
-          ]"
-          @click="changeTab(tab.value)"
-        >
-          {{ tab.label }}
+  <div class="relative lg:w-lg lg:mx-auto">
+    <section class="h-36">
+      <div class="fixed w-full lg:w-lg py-4 lg:px-4 bg-white">
+        <div class="grid grid-cols-3">
+          <div
+            v-for="tab of tabs"
+            :key="tab.id"
+            :class="[
+              'text-center border py-2 cursor-pointer transition-all',
+              activeTab === tab.value && 'text-white bg-brown-500',
+            ]"
+            @click="changeTab(tab.value)"
+          >
+            {{ tab.label }}
+          </div>
         </div>
-      </div>
-      <div class="flex items-center relative">
-        <input
-          placeholder="請輸入問題關鍵字搜索"
-          class="w-full py-2 pl-4 pr-12 border outline-none"
-          type="text"
-        />
-        <div
-          class="
-            flex
-            justify-center
-            items-center
-            absolute
-            right-0
-            bg-brown-500
-            w-8
-            h-full
-            cursor-pointer
-          "
-        >
-          <img class="" :src="imgSrc('search.svg')" alt="search" />
+        <div class="flex items-center relative">
+          <input
+            placeholder="請輸入問題關鍵字搜索"
+            class="w-full py-2 pl-4 pr-12 border outline-none"
+            type="text"
+          />
+          <div
+            class="
+              flex
+              justify-center
+              items-center
+              absolute
+              right-0
+              bg-brown-500
+              w-8
+              h-full
+              cursor-pointer
+            "
+          >
+            <img class="" :src="imgSrc('search.svg')" alt="search" />
+          </div>
         </div>
       </div>
     </section>

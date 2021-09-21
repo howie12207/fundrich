@@ -23,7 +23,7 @@ const popup = (target) => {
       @click="popup('recommend')"
     />
     <slot></slot>
-    <FooterBar />
+    <FooterBar class="relative" />
     <div
       class="
         fixed
